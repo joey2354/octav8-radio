@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "octav8-radio",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-04",
+
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "RADIO_ROOM",
+        "class_name": "RadioRoom"
+      }
+    ]
+  },
+
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "RadioRoom"
+      ]
+    }
+  ]
+}
